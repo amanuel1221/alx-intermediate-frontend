@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A blog post about semantic HTML and accessibility practices">
+    <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
+    <meta name="author" content="Amanuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Understanding Semantic Html</h2>
+            <p>Published on <time datetime="2024-09-10">September 10</time></p>
+
+            <section>
+                <h3>Introduction</h3>
+                <p>Semantic HTML helps improve the accessibility and SEO of your website. In this post, we’ll explore its benefits and how to implement it.</p>
+            </section>
+
+            <section>
+                <h3>Main Content</h3>
+                <p>
+                    Using elements like 
+                    <code>&lt;article&gt;</code>, 
+                    <code>&lt;section&gt;</code>, 
+                    <code>&lt;header&gt;</code> 
+                    ensures that both users and search engines can better understand the structure and content of a webpage.
+                </p>
+                <figure>
+                    <img src="" alt="example">
+                    <figcaption>An illustration of semantic HTML elements</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Conclusion</h3>
+                <p>By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate.</p>
+            </section>
+
+            <footer>
+                <p>Written by Amanuel</p>
+                <p>Published on 2024-09-11</p>
+                <p>&copy; Copyright</p>
+            </footer>
+        </article>
+
+        <!-- New Form Section with ARIA roles -->
+        <section>
+            <form action="#" method="POST" aria-labelledby="form-title" role="form">
+                <h2 id="form-title">Contact Form</h2>
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" aria-required="true">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" aria-required="true">
+                </div>
+
+                <div>
+                    <button type="submit" aria-label="Submit the form">Submit</button>
+                </div>
+
+                <div aria-live="polite" role="alert">
+                    <!-- This space will be used for live feedback -->
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
